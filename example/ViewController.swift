@@ -10,9 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var myLabel: UILabel!
+  
+  @IBAction func clickyHere(sender: AnyObject) {
+    myLabel.text = "This is pretty sweet"
+  }
+
+    
+
+    
+
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+
+    println("Hello World")
   }
 
   override func didReceiveMemoryWarning() {
